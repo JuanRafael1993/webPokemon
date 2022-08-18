@@ -1,0 +1,14 @@
+nav {
+	height: 70px;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	.navbar_img {
+		width: 64px;
+	}
+	.pokemon_favorite {
+		display: flex;
+		color: black;
+	}
+}
