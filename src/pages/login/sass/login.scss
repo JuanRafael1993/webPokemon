@@ -1,0 +1,57 @@
+.login_container {
+	background-color: grey;
+	background-image: url('../../../assets/img/fondo_pokemon.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.form_login {
+		width: 350px;
+		height: min-content;
+		background-color: rgba(231, 231, 231, 0.4);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 50px 30px;
+		.img_logo {
+			width: 160px;
+			height: 70px;
+			margin-bottom: 50px;
+		}
+		form {
+			width: 100%;
+			height: max-content;
+			display: flex;
+			flex-direction: column;
+			.container_input {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin: 20px 0;
+				background-color: red;
+				img {
+					width: 25px;
+					height: 25px;
+				}
+				input {
+					height: 30px;
+					width: 100%;
+					font-size: 18px;
+					padding: 0 5px;
+					border-radius: 5px;
+					border: none;
+					background-color: blue;
+				}
+			}
+			button {
+				margin: 20px 0;
+				height: 30px;
+				cursor: pointer;
+			}
+		}
+	}
+}
