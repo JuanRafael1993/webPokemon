@@ -1,38 +1,38 @@
 .login_container {
-	background-color: grey;
-	background-image: url('../../../assets/img/fondo_pokemon.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: black;
 	width: 100%;
 	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	.form_login {
-		width: 350px;
-		height: min-content;
-		background-color: rgba(231, 231, 231, 0.4);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	.container_left {
 		display: flex;
-		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		padding: 50px 30px;
 		.img_logo {
-			width: 160px;
-			height: 70px;
+			width: 600px;
+			height: 400px;
 			margin-bottom: 50px;
+			animation: animation_pokemon 10s ease infinite;
 		}
+	}
+	.container_right {
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(231, 231, 231, 0.1);
 		form {
-			width: 100%;
-			height: max-content;
-			display: flex;
-			flex-direction: column;
+			padding: 40px 20px;
+			h2 {
+				text-align: center;
+				margin-bottom: 50px;
+			}
 			.container_input {
 				display: flex;
 				flex-direction: row;
 				align-items: center;
-				margin: 20px 0;
-				background-color: red;
+				margin: 40px 0;
 				img {
 					width: 25px;
 					height: 25px;
@@ -44,14 +44,27 @@
 					padding: 0 5px;
 					border-radius: 5px;
 					border: none;
-					background-color: blue;
+					background-color: grey;
 				}
 			}
 			button {
 				margin: 20px 0;
 				height: 30px;
+				width: 100%;
 				cursor: pointer;
 			}
 		}
+	}
+}
+
+@keyframes animation_pokemon {
+	0% {
+		transform: translate(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	100% {
+		transform: translateY(0);
 	}
 }
