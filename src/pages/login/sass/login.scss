@@ -24,27 +24,32 @@
 		background-color: rgba(231, 231, 231, 0.1);
 		form {
 			padding: 40px 20px;
+			height: 400px;
+			background-color: royalblue;
 			h2 {
 				text-align: center;
 				margin-bottom: 50px;
 			}
 			.container_input {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				margin: 40px 0;
-				img {
-					width: 25px;
-					height: 25px;
+				margin-bottom: 30px;
+				div {
+					display: flex;
+					img {
+						width: 25px;
+						height: 25px;
+					}
+					input {
+						height: 30px;
+						width: 100%;
+						font-size: 18px;
+						padding: 0 5px;
+						border-radius: 5px;
+						border: none;
+						background-color: grey;
+					}
 				}
-				input {
-					height: 30px;
-					width: 100%;
-					font-size: 18px;
-					padding: 0 5px;
-					border-radius: 5px;
-					border: none;
-					background-color: grey;
+				p {
+					text-align: center;
 				}
 			}
 			button {
