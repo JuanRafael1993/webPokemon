@@ -26,10 +26,10 @@ const Login = () => {
 			</div>
 			<div className="container_right">
 				<form onSubmit={handleSubmit}>
-					<h2>WELCOME!</h2>
+					<h2>Welcome to pokedex</h2>
+					<hr></hr>
 					<div className="container_input">
 						<div>
-							<img src={user} />
 							<input
 								onChange={handleChange}
 								value={values.login}
@@ -37,13 +37,13 @@ const Login = () => {
 								id="login"
 								name="login"
 								type="text"
+								placeholder="User"
 							/>
 						</div>
 						{touched.login && errors.login && <p>{errors.login}</p>}
 					</div>
 					<div className="container_input">
 						<div>
-							<img src={padlock} />
 							<input
 								onChange={handleChange}
 								value={values.pass}
@@ -51,12 +51,13 @@ const Login = () => {
 								id="pass"
 								name="pass"
 								type="text"
+								placeholder="Pass"
 							/>
 							<img src={eye} />
 						</div>
 						{touched.pass && errors.pass && <p>{errors.pass}</p>}
 					</div>
-					<button type="onSubmit">Entrar</button>
+					<button type="onSubmit">Login</button>
 				</form>
 			</div>
 		</div>
