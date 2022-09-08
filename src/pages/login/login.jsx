@@ -1,7 +1,5 @@
 import './sass/login.scss';
 import eye from '../../assets/icons/eye.png';
-import padlock from '../../assets/icons/padlock.png';
-import user from '../../assets/icons/user.png';
 import pokemon_one from '../../assets/img/pokemon_one.png';
 import { useFormik } from 'formik';
 import schema from './schema/schemaLogin';
